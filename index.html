@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Personal portfolio website of Lehi Daniel. Showcasing web development projects, skills, and contact information.">
+  <meta name="keywords" content="Lehi Daniel, portfolio, web developer, HTML, CSS, JavaScript, frontend developer">
+  <meta name="author" content="Lehi Daniel">
+
+  
+  <meta property="og:title" content="Lehi Daniel | Portfolio">
+  <meta property="og:description" content="Explore Lehi Daniel's portfolio of web development projects and skills.">
+  <meta property="og:image" content="https://yourdomain.com/images/preview-image.png"> <!-- Replace with your actual preview image URL -->
+  <meta property="og:url" content="https://yourdomain.com"> <!-- Replace with your actual site URL -->
+  <meta property="og:type" content="website">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lehi Daniel | Portfolio">
+  <meta name="twitter:description" content="Explore Lehi Daniel's portfolio of web development projects and skills.">
+  <meta name="twitter:image" content="https://yourdomain.com/images/preview-image.png">
+
+  
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  
+  <title>Lehi Daniel | Portfolio</title>
+
+ 
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://kit.fontawesome.com/d8c15218f1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="Lehi Daniel Logo" class="logo">
+          <ul>
+            <li><a href="#about">Home</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Services</a></li>
+            <li><a href="#skills">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer & Frontend Developer</p>
+          <h1>Hi, I'm <span>Lehi</span> <br>Daniel From Nigeria</h1>
+      </div>
+    </header> 
+
+    <main>
+      <!----------------------About section----------------------->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="images/user.png" alt="user image">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>I'm a UI/UX designer and frontend developer with a passion for creating beautiful and functional web applications. I have experience in HTML, CSS, JavaScript, and various frontend frameworks. I love turning complex problems into simple, beautiful, and intuitive designs. I believe that good design is not just about aesthetics, but also about usability and user experience. When I'm not coding, you can find me exploring new technologies, reading books, or spending time with my family and friends.</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                <p class="tab-links" onclick="openTab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                  <li><span>Web Development</span><br>Web app Development</li>
+                  <li><span>App Development</span><br>Building Android/iOS apps</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>2021 - Current</span><br>UI/UX Desin Training at ET Institute.</li>
+                  <li><span>2019 - 2021</span><br>Team Lead at SpringBoard.</li>
+                  <li><span>2017 - 2019</span><br>UI/UX Desin Executive at coin Digital Ltd.</li>
+                  <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                  <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                  <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------Services section----------------------->
+      <div class="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="service-list">
+            <div class="service-item">
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>
+                I create visually appealing and user-friendly web designs that enhance user experience and engagement. My designs are tailored to meet the specific needs of each project, ensuring a unique and effective online presence.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="service-item">
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                I specialize in UI/UX design, focusing on creating intuitive and engaging user interfaces. My approach combines aesthetics with functionality, ensuring that users have a seamless experience while interacting with web applications.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="service-item">
+              <i class="fa-brands fa-app-store"></i>
+              <h2>App Design</h2>
+              <p>
+                I design mobile applications that are not only visually appealing but also highly functional. My app designs prioritize user experience, ensuring that users can navigate and interact with the app effortlessly.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------Portfolio section----------------------->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="/images/work-1.png" alt="My work build and designs">
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Designed a social media app with a focus on user engagement and intuitive navigation. </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="/images/work-2.png" alt="My work build and designs">
+              <div class="layer">
+                <h3>Music App</h3>
+                <p>Developed a music app that allows users to stream their favorite songs with ease. The design emphasizes both simplicity and functionality</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+            <div class="work">
+              <img src="/images/work-3.png" alt="My work build and designs">
+              <div class="layer">
+                <h3>Online Shopping App</h3>
+                <p>Created an online shopping app that offers a user-friendly interface for browsing and purchasing products.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lehi Daniel. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js" defer></script>
+<body>
+</html>
