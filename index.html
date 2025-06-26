@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="/css/style.css">
 
   <script src="https://kit.fontawesome.com/d8c15218f1.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js" defer></script>
 </head>
 <body>
 
@@ -39,13 +40,15 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" alt="Lehi Daniel Logo" class="logo">
-          <ul>
-            <li><a href="#about">Home</li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Services</a></li>
-            <li><a href="#skills">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
         </nav>
         <div class="header-text">
           <p>UI/UX Designer & Frontend Developer</p>
@@ -59,7 +62,7 @@
         <div class="container">
           <div class="row">
             <div class="about-col-1">
-              <img src="images/user.png" alt="user image">
+              <img src="images/img-2.png" alt="user image">
             </div>
             <div class="about-col-2">
               <h1 class="sub-title">About Me</h1>
@@ -98,7 +101,7 @@
       </div>
 
       <!----------------------Services section----------------------->
-      <div class="services">
+      <div id="services" class="services">
         <div class="container">
           <h1 class="sub-title">My Services</h1>
           <div class="service-list">
@@ -136,7 +139,7 @@
           <h1 class="sub-title">My Work</h1>
           <div class="work-list">
             <div class="work">
-              <img src="/images/work-1.png" alt="My work build and designs">
+              <img src="images/work-1.png" alt="My work build and designs">
               <div class="layer">
                 <h3>Social Media App</h3>
                 <p>Designed a social media app with a focus on user engagement and intuitive navigation. </p>
@@ -149,6 +152,7 @@
                 <h3>Music App</h3>
                 <p>Developed a music app that allows users to stream their favorite songs with ease. The design emphasizes both simplicity and functionality</p>
                 <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
             </div>
             <div class="work">
               <img src="/images/work-3.png" alt="My work build and designs">
@@ -159,14 +163,43 @@
               </div>
             </div>
           </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+
+      <!------------------ Contact ------------------------>
+      <div id="contact" class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i> lehidaniel99@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone"></i></i> +2348160980287</p>
+              <div class="social-icons">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <a href="" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+              <form name ="submit-to-google-sheet" action="https://script.google.com/macros/s/AKfycbz_xS_UjbXxShUDMMQ0S-e5wIRImjq_27b4xoarRcYtM7HpSQbZpKDdPwI3HoidG15DUA/exec" method="POST">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" id="msg" class="btn btn2">Send Message</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <p>&copy; 2025 Lehi Daniel. All rights reserved.</p>
+      <div class="copyright">
+        <p>Copyright &copy; 2025 Made by Lehi Ita Daniel. <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+      </div>
     </footer>
-
-    <script src="./js/script.js" defer></script>
 <body>
 </html>
